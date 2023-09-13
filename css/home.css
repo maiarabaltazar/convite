@@ -1,0 +1,120 @@
+.abrir{
+    background-color: white;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #808D7D;
+    top: 0px;
+    left: 0px;
+    
+}
+
+.abrir button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none;
+    background: transparent;
+    color: #808D7D;
+}
+
+.abrir.oculto{
+    display: none;
+}
+
+
+.js .home{
+    opacity: 0;
+}
+
+.home.ativo{
+    opacity: 1;
+    transform: none;
+    transition: transform 0.8s, opacity 1.5s;
+}
+.home {
+    padding-top: 150px;
+
+}
+
+.frase {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    
+}
+
+.sub{
+    color: #A8B1A6;
+    font: 400 0.7rem "Roboto Slab", sans-serif;
+    
+   
+}
+
+.home::after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 123px;
+    top: 0;
+    background-image: url("../img/home-flores-e.png");
+    position: absolute;
+    
+}
+
+.frase {
+    color: #303525;
+}
+
+.nomes {
+    padding-top: 60px;
+    padding-bottom: 30px;
+    color: #808D7D;
+    text-align: center;
+   
+}
+
+.hora{
+    text-align: center;
+    
+
+}
+
+.hora p:first-child {
+    padding-bottom: 10px;
+    font-size: 1rem;
+    color: #303525 ;
+    
+}
+
+.hora p:last-child {
+    color: white;
+  background-color: #A8B1A6;
+}
+
+.links {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #808D7D;
+}
+
+.flex {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flex p {
+    padding-top: 10px;
+}

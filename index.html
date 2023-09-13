@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Slab:wght@300;400&display=swap"
+        rel="stylesheet">
+    <title>Maiara e Luan</title>
+</head>
+<script>
+    document.documentElement.classList.add("js");
+</script>
+<div class="abrir">
+    <p class="font-2 nomes" data-anime="200">Maiara e Luan</p>
+    <button class="frase font-1-400 btn-js" onclick="playaudio(), removeModal()" data-anime="600"><img src="img/convite.png" >abrir convite</button>
+    
+</div>
+<body>
+    <div class="home"> 
+        <p class="frase font-1-300 ">"Preparem seus dados e juntem-se a nós para uma aventura épica no mundo real! Estamos prestes a fazer um upgrade na relação! Não é um bug, é um recurso do amor! Sim, "You shall pass!".
+        <p class="frase sub"> Bregas 2024 </p>
+        <div class="informacoes">
+            <p class="font-2 nomes">Maiara e Luan</p>
+             <div class="hora">
+                <p class="font-1-300">Convidam para a celebração<br> de sua união.</p>
+                <p class="font-1-400 ">02 de fevereiro de 2024, ÀS 19H30</p>
+            </div>
+            <div class="links font-1-400-s">
+                <div class="local flex">
+                    <a href="#local"><img src="img/local.svg">
+                        <p>Local<br>Cerimônia</p>
+                    </a>
+                </div>
+                <div class="confirmar flex">
+                    <a href="https://api.whatsapp.com/send?phone=5521998561996&text=Ol%C3%A1%2C%20presen%C3%A7a%20confirmada!"
+                        target="_blank">
+                        <img src="img/whats.svg">
+                        <p>Confimar <br>Presença</p>
+                    </a>
+                </div>
+                <div class="lista flex">
+                    <a href="https://sites.icasei.com.br/luana_joao_2023/home" target="_blank">
+                        <img src="img/presentes.svg">
+                        <p>Lista de<br> Presentes</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="conteudo" id="local">
+        <img src="img/shika_e_tema2.jpg" class="img">
+        <div class="local-cerimonia">
+            <h2 class="font-1-400-m">Local da celebração </h2>
+            <p class="size">Av. Quintino Bocaiúva, 151 </p>
+            <p class="size">Mocelin - Niterói</p>
+            
+            <a class="size"
+                href="https://goo.gl/maps/zLJjxZ5gsD3jxzxA8"
+                target="_blank">clique aqui para ver o trajeto!</a>
+            <p class="size-b" id="presenca">Contamos com sua presença !</p>
+        </div>
+        <img src="img/ML.png" id="logo">
+    </div>
+<audio src="audio/musica.mp3" id="audio">
+
+</audio>
+
+</body>
+<script>
+
+const btn = document.querySelector('.btn-js');
+btn.addEventListener("click", showModal);
+
+function playaudio(){
+    const audio = document.querySelector("#audio");
+    audio.play();
+}
+
+function removeModal(){
+    const modal =  document.querySelector(".abrir");;
+    modal.classList.add("oculto");
+}
+
+function showModal(){
+    const home = document.querySelector(".home");
+    home.classList.add("ativo");
+}
+
+
+</script>
+<script src="simple-anime.js"></script>
+</html>
